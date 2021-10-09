@@ -1,0 +1,17 @@
+{
+  "name": "somov/composer-asset-library",
+  "minimum-stability": "dev",
+  "require": {
+    "somov/composer-asset-installer-test-asset": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../test-asset"
+    },
+    {
+      "type": "path",
+      "url": "../"
+    }
+  ]
+}

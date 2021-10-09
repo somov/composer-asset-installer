@@ -1,0 +1,15 @@
+{
+    "name": "somov/composer-asset-installer-test-asset",
+    "type": "composer-asset",
+    "require": {
+        "somov/composer-asset-installer": "dev-master"
+    },
+    "extra": {
+        "installer-asset-type": "npm",
+        "installer-asset-name": "test-asset"
+    },
+    "repositories": [{
+        "type": "path",
+        "url": "../"
+    }]
+}

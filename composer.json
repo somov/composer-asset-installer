@@ -1,0 +1,33 @@
+{
+    "name": "somov/composer-asset-installer",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "description": "Composer asset installer",
+    "version": "1.0.1",
+    "keywords": [
+        "installer",
+        "assets"
+    ],
+    "homepage": "https://github.com/somov/composer-asset-installer",
+    "authors": [
+        {
+            "name": "Nikolay Somov",
+            "email": "somov.nn@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Somov\\Installer\\": "src/Somov/Installer" }
+    },
+   
+    "extra": {
+        "class": "Somov\\Installer\\Plugin"
+    },
+    "require": {
+        "composer-plugin-api": "^1.0 || ^2.0"
+    },
+
+    "require-dev": {
+        "composer/composer": "1.6.* || ^2.0"
+    }
+    
+}

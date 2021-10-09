@@ -1,0 +1,83 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "60e5d3e01cac73df25d3eb7e401640c7",
+    "packages": [
+        {
+            "name": "somov/composer-asset-installer",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "..",
+                "reference": "5fe32930aca46a6d6d7cd21d3bbc37575094b3c0"
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.6.* || ^2.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Somov\\Installer\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Somov\\Installer\\": "src/Somov/Installer"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolay Somov",
+                    "email": "somov.nn@gmail.com"
+                }
+            ],
+            "description": "Composer asset installer",
+            "homepage": "https://github.com/somov/composer-asset-installer",
+            "keywords": [
+                "assets",
+                "installer"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "somov/composer-asset-installer-test-asset",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../test-asset",
+                "reference": "c0a5c760a0c5aed44e2f7bbaa7b42e369ef872f5"
+            },
+            "require": {
+                "somov/composer-asset-installer": "dev-master"
+            },
+            "type": "composer-asset",
+            "extra": {
+                "installer-asset-type": "npm",
+                "installer-asset-name": "test-asset"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "somov/composer-asset-installer-test-asset": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
